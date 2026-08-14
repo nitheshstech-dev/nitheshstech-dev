@@ -79,16 +79,6 @@ The concept focuses on sensing and utilizing vibration from **moving vehicles, i
 
 ---
 
-## 📈 Contribution Streak
-
-<div align="center">
-
-![GitHub Streak](https://streak-stats.demolab.com?user=nitheshstech-dev&hide_border=true)
-
-</div>
-
----
-
 ## 🎯 Current Focus
 
 ```text
