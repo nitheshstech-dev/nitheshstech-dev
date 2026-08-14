@@ -33,9 +33,10 @@ I’m an engineer building practical projects across **web development, data ana
 ![LLMs](https://img.shields.io/badge/LLMs-AI-6E40C9?style=flat-square)
 ![RAG](https://img.shields.io/badge/RAG-Generative%20AI-0A7EA4?style=flat-square)
 
-### Tools
+### Tools & Embedded
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white)
 
 ---
 
@@ -49,21 +50,69 @@ A professional B2B website for **REAL IMPEX**, a home-textile manufacturing and 
 
 🔗 [View Repository](https://github.com/nitheshstech-dev/real-impex-website)
 
-### ⚡ Vibrational Energy Harvesting System
+### ⚡ Hybrid Thermal & Vibrational Energy Harvesting
 
-An **ECE engineering project exploring vibration-based energy harvesting** using sensors/transducers to capture mechanical vibrations and convert them into usable electrical energy.
+**Final-year ECE project — “Emerging Technique in Correlation and Integration with Thermal and Vibrational Energy Harvesting.”**
 
-The concept focuses on sensing and utilizing vibration from **moving vehicles, industrial machinery and automated equipment**. Vibration sensors/transducers detect mechanical motion, and the harvesting circuit converts the resulting electrical signal into a usable energy source for low-power electronics and monitoring systems.
+A **hybrid energy-harvesting prototype** that combines two otherwise-wasted energy sources: **mechanical vibration** and **waste heat / temperature gradients**. The system uses **10 piezoelectric sensors** for vibration harvesting and **10 thermoelectric modules** for thermal harvesting. Their outputs are conditioned, monitored and stored in a **12 V rechargeable battery**. An **Arduino Uno** handles monitoring and energy-management functions. fileciteturn24file0L2-L2
 
-**Key areas explored:**
-- 📡 **Vibration Sensors / Piezoelectric Transducers** — detect mechanical vibration and generate an electrical response.
-- ⚡ **Energy Conversion** — converts vibration-induced mechanical energy into electrical energy.
-- 🔋 **Energy Storage** — harvested energy can be conditioned and stored for suitable low-power applications.
-- 📊 **Measurement & Monitoring** — sensors can be used to measure vibration characteristics and evaluate harvesting performance.
+#### 🔋 How the Integrated System Works
 
-**Future Development:** The technology has potential for **EVs, industrial automation, rotating machinery and smart machines**, where continuous vibration could be used as a supplementary energy source for low-power sensors, condition-monitoring devices and other distributed electronics.
+```text
+Mechanical Vibration                         Waste Heat
+       │                                         │
+       ▼                                         ▼
+10 Piezoelectric Sensors                 10 Thermoelectric Modules
+       │                                         │
+       ▼                                         ▼
+Bridge Rectifier                              DC Output
+       │                                         │
+       └────────────────┬────────────────────────┘
+                        ▼
+                Charger Controller
+                        │
+                        ▼
+                  12 V Battery
+                        │
+             ┌──────────┴──────────┐
+             ▼                     ▼
+        Auxiliary Loads       Arduino Monitoring
+                                   │
+                                16×2 LCD
+```
 
-> **Engineering goal:** turn otherwise wasted mechanical vibration into useful electrical energy while enabling self-powered sensing and monitoring systems.
+#### 🧩 Key Hardware
+
+- 📡 **10 Piezoelectric Sensors** — convert mechanical vibration into electrical output.
+- 🌡️ **10 Thermoelectric Modules** — generate electrical output from useful temperature gradients.
+- 🔌 **Bridge Rectifier** — converts the piezoelectric AC output to DC.
+- ⚙️ **Charger Controller** — conditions and manages the harvested energy before storage.
+- 🔋 **12 V Rechargeable Battery** — stores the recovered energy.
+- 🧠 **Arduino Uno + DC Voltage Sensor** — monitors voltage and system status.
+- 📺 **16×2 LCD** — displays voltage, battery status and alerts.
+- ❄️ **Heat Sinks** — help maintain a useful thermal gradient across the thermoelectric modules.
+
+#### 📊 Prototype Results
+
+Under the project's reported test conditions, the prototype recorded **8–15 V from the piezoelectric section**, **3–5 V from the thermoelectric section**, and **12–14 V at the stabilized battery side**. The report records approximately **77% efficiency under optimal conditions**, with testing reported across **10–50 Hz vibration** and **40–120 °C temperature** ranges. These are **college-prototype results, not commercial specifications**. fileciteturn24file0L2-L2
+
+#### 🚗🏭 Future Development & Applications
+
+The project's long-term direction is to recover a portion of otherwise-wasted mechanical and thermal energy as **supplementary electrical power**, not to replace an EV's main traction battery or an industrial machine's primary power source. fileciteturn24file0L2-L2
+
+- 🚗 **Electric Vehicles** — future integration could use suitable vibration and waste-heat locations to provide supplementary power for low-power electronics, sensors and monitoring systems.
+- 🏭 **Industrial Automation** — motors, pumps, conveyors and automated equipment produce recurring vibration and heat that could potentially support distributed sensing and auxiliary electronics.
+- ⚙️ **Industrial Machinery** — harvesting from machine vibration and thermal gradients could contribute to self-powered condition-monitoring systems.
+- 📡 **Self-Powered IoT Sensors** — harvested energy could reduce dependence on disposable batteries for sensing, local processing and communication.
+- 🤖 **AI-Based Predictive Maintenance** — future versions could combine vibration and temperature data with machine-learning models to detect abnormal behaviour and predict faults.
+
+#### 🔬 Future Engineering Development
+
+The repository identifies several development directions: higher-performance piezoelectric and thermoelectric materials, improved thermal management, more efficient DC-DC power conversion, smarter energy-management techniques, ESP32/ESP8266-class IoT connectivity, AI-based predictive maintenance, and vehicle-oriented EV integration. fileciteturn24file0L2-L2
+
+> **Engineering concept:** recover otherwise-wasted vibration and heat, condition the energy, store it, and use it to support sensing and low-power electronics.
+
+🔗 [View Project Repository](https://github.com/nitheshstech-dev/thermal-vibrational-energy-harvesting)
 
 ---
 
