@@ -39,15 +39,31 @@ I’m an engineer building practical projects across **web development, data ana
 
 ---
 
-## ⭐ Featured Project
+## ⭐ Featured Projects
 
-### REAL IMPEX Website
+### 🌐 REAL IMPEX Website
 
 A professional B2B website for **REAL IMPEX**, a home-textile manufacturing and export business based in Karur, Tamil Nadu.
 
 **Focus:** corporate branding, product presentation, responsive web design, product portfolio and buyer-focused communication.
 
 🔗 [View Repository](https://github.com/nitheshstech-dev/real-impex-website)
+
+### ⚡ Vibrational Energy Harvesting System
+
+An **ECE engineering project exploring vibration-based energy harvesting** using sensors/transducers to capture mechanical vibrations and convert them into usable electrical energy.
+
+The concept focuses on sensing and utilizing vibration from **moving vehicles, industrial machinery and automated equipment**. Vibration sensors/transducers detect mechanical motion, and the harvesting circuit converts the resulting electrical signal into a usable energy source for low-power electronics and monitoring systems.
+
+**Key areas explored:**
+- 📡 **Vibration Sensors / Piezoelectric Transducers** — detect mechanical vibration and generate an electrical response.
+- ⚡ **Energy Conversion** — converts vibration-induced mechanical energy into electrical energy.
+- 🔋 **Energy Storage** — harvested energy can be conditioned and stored for suitable low-power applications.
+- 📊 **Measurement & Monitoring** — sensors can be used to measure vibration characteristics and evaluate harvesting performance.
+
+**Future Development:** The technology has potential for **EVs, industrial automation, rotating machinery and smart machines**, where continuous vibration could be used as a supplementary energy source for low-power sensors, condition-monitoring devices and other distributed electronics.
+
+> **Engineering goal:** turn otherwise wasted mechanical vibration into useful electrical energy while enabling self-powered sensing and monitoring systems.
 
 ---
 
